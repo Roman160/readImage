@@ -1,0 +1,7 @@
+#!/usr/bin/env python2
+
+from PIL import Image
+import pytesseract
+im = Image.open("<image_file_path>.png")
+text = pytesseract.image_to_string(im, lang="eng")
+print(text)
