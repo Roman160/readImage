@@ -2,6 +2,6 @@
 Python script to read text words from an image
 
 
-Syntax
+Syntax:
 
 ./readImage.py ["image_file_path"]
