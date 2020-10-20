@@ -1,16 +1,16 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 
 #importing pillow library
 from PIL import Image
 #importing pytesseract library
 import pytesseract
-#importing sys module to take input
+#importing sys module
 import sys
 
 
 
-#open the image that is going to be read 
-#and store it in a variable
+#enter the filepath to the image and it will be
+#passed in to the function as argv[1]
 im = Image.open(sys.argv[1])
 #storing output from pytesseract function 
 #in a variable
