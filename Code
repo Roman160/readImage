@@ -1,7 +1,14 @@
 #!/usr/bin/env python2
 
+#import pillow
 from PIL import Image
+#import pytesseract
 import pytesseract
+
+#open photo that is going to be read 
+#and store it in a variable im
 im = Image.open("<image_file_path>.png")
+#storing output from pytesseract function 
+#and storing it in a variable
 text = pytesseract.image_to_string(im, lang="eng")
 print(text)
