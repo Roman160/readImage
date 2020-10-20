@@ -4,10 +4,14 @@
 from PIL import Image
 #importing pytesseract library
 import pytesseract
+#importing sys module to take input
+import sys
+
+
 
 #open the image that is going to be read 
 #and store it in a variable
-im = Image.open("<image_file_path>.png")
+im = Image.open(sys.argv[1])
 #storing output from pytesseract function 
 #in a variable
 text = pytesseract.image_to_string(im, lang="eng")
